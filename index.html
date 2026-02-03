@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FederliT - Federleicht in die digitale Zukunft. Ihr Schweizer Partner für IT-Dienstleistungen, Cloud, Security und Managed Services.">
+    <title>FederliT | Federleicht in die digitale Zukunft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <svg class="logo-svg" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="8" width="28" height="5" fill="currentColor"/>
+                    <rect x="0" y="18" width="18" height="5" fill="currentColor"/>
+                    <rect x="0" y="28" width="28" height="5" fill="currentColor"/>
+                    <circle cx="45" cy="12" r="5" fill="#1E5FBB"/>
+                    <rect x="42" y="20" width="6" height="13" fill="currentColor"/>
+                    <rect x="60" y="8" width="6" height="25" fill="#1E5FBB"/>
+                    <rect x="60" y="8" width="20" height="5" fill="#1E5FBB"/>
+                </svg>
+                <span class="logo-text">Feder<span class="logo-accent">liT</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Was wir tun</a></li>
+                <li><a href="#about" class="nav-link">Wer wir sind</a></li>
+                <li><a href="#why-us" class="nav-link">Warum wir</a></li>
+                <li><a href="#booking" class="nav-link nav-cta">Termin buchen</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-brand">
+                <div class="hero-logo-large">
+                    <svg viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="12" width="45" height="8" fill="white"/>
+                        <rect x="0" y="30" width="30" height="8" fill="white"/>
+                        <rect x="0" y="48" width="45" height="8" fill="white"/>
+                        <circle cx="72" cy="18" r="8" fill="#3B7DD8"/>
+                        <rect x="67" y="32" width="10" height="24" fill="white"/>
+                        <rect x="95" y="12" width="10" height="44" fill="#3B7DD8"/>
+                        <rect x="95" y="12" width="35" height="8" fill="#3B7DD8"/>
+                    </svg>
+                </div>
+                <p class="hero-tagline">Federleicht in die digitale Zukunft</p>
+            </div>
+            <h1 class="hero-title">
+                <span class="line">Ihre IT ist kompliziert?</span>
+                <span class="line gradient-text">Unsere Lösung nicht.</span>
+            </h1>
+            <p class="hero-subtitle">
+                <strong>Schluss mit IT-Kopfschmerzen.</strong> Wir nehmen Ihnen die Last ab – 
+                damit Sie sich auf das konzentrieren können, was Sie wirklich antreibt: Ihr Business.
+            </p>
+            <div class="hero-cta">
+                <a href="#booking" class="btn btn-primary">
+                    <span>Kostenlos Termin buchen</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                </a>
+                <a href="#services" class="btn btn-secondary">Erst mal schauen</a>
+            </div>
+            <div class="hero-proof">
+                <div class="proof-item">
+                    <span class="proof-number" data-count="97">0</span>%
+                    <span class="proof-label">Würden uns weiterempfehlen</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-number" data-count="15">0</span> Min
+                    <span class="proof-label">Reaktionszeit im Schnitt</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-number" data-count="0">0</span>
+                    <span class="proof-label">Versteckte Kosten. Versprochen.</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Entdecken</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kommt Ihnen das bekannt vor?</span>
+                <h2 class="section-title">IT-Probleme kosten <span class="gradient-text">Zeit, Geld & Nerven</span></h2>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">😤</div>
+                    <h3>«Der Server ist wieder down»</h3>
+                    <p>Immer im dümmsten Moment. Und niemand weiss, warum. Das Team steht still, Kunden warten, und Sie fragen sich: Muss das sein?</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🤯</div>
+                    <h3>«Was kostet das jetzt wieder?»</h3>
+                    <p>Überraschungsrechnungen vom IT-Dienstleister. Neue Software hier, Lizenz dort. Am Ende kostet alles doppelt so viel wie gedacht.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">😰</div>
+                    <h3>«Sind wir sicher?»</h3>
+                    <p>Cyberangriffe in den News. Ransomware beim Nachbarn. Und Sie hoffen einfach, dass es Sie nicht trifft. Das ist kein Plan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Was wir für Sie tun</span>
+                <h2 class="section-title">Wir machen IT <span class="gradient-text">federleicht</span></h2>
+                <p class="section-subtitle">Kein Tech-Blabla. Keine halben Sachen. Sondern Lösungen, die funktionieren – heute und morgen.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                        </svg>
+                    </div>
+                    <h3>Cloud, die einfach läuft</h3>
+                    <p>Vergessen Sie Server im Keller. Wir bringen Ihre Daten sicher in die Cloud – mit voller Kontrolle und null Kopfschmerzen.</p>
+                    <ul class="service-features">
+                        <li>Microsoft 365 & Azure</li>
+                        <li>Hybrid Cloud Setups</li>
+                        <li>Migration ohne Ausfälle</li>
+                        <li>Schweizer Rechenzentren</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Let's go
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3>Security, die schützt</h3>
+                    <p>Hacker arbeiten 24/7. Wir auch. Schlafen Sie ruhig – wir passen auf Ihre Daten auf.</p>
+                    <ul class="service-features">
+                        <li>Rund-um-die-Uhr Monitoring</li>
+                        <li>Backup & Disaster Recovery</li>
+                        <li>Security Awareness Training</li>
+                        <li>Penetration Tests</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Absichern
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3>IT komplett auslagern</h3>
+                    <p>Keine eigene IT-Abteilung? Kein Problem. Wir sind Ihre IT-Abteilung – nur ohne Büro bei Ihnen.</p>
+                    <ul class="service-features">
+                        <li>Fester Ansprechpartner</li>
+                        <li>Proaktive Wartung</li>
+                        <li>Helpdesk für Ihr Team</li>
+                        <li>Fixe monatliche Kosten</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Auslagern
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="service-badge">🔥 Meistgefragt</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Modern arbeiten</h3>
+                    <p>Homeoffice, Büro, unterwegs – egal. Wir richten Arbeitsplätze ein, die überall funktionieren.</p>
+                    <ul class="service-features">
+                        <li>Microsoft Teams & SharePoint</li>
+                        <li>Sichere Remote-Zugänge</li>
+                        <li>Geräte-Management</li>
+                        <li>Collaboration Tools</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Modernisieren
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                        </svg>
+                    </div>
+                    <h3>Strategie & Beratung</h3>
+                    <p>Nicht sicher, wo anfangen? Wir analysieren, beraten und zeigen Ihnen den kürzesten Weg zum Ziel.</p>
+                    <ul class="service-features">
+                        <li>IT-Strategie & Roadmap</li>
+                        <li>Digitalisierungs-Check</li>
+                        <li>Budget-Planung</li>
+                        <li>Vendor Management</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Beraten lassen
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3>Netzwerk & Infrastruktur</h3>
+                    <p>Schnell, stabil, sicher. Wir bauen Netzwerke, die mitwachsen – ohne Flaschenhälse.</p>
+                    <ul class="service-features">
+                        <li>Netzwerk-Design</li>
+                        <li>WLAN-Lösungen</li>
+                        <li>Firewall & VPN</li>
+                        <li>Hardware-Beschaffung</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Infrastruktur planen
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promise Section -->
+    <section class="promise-section">
+        <div class="container">
+            <div class="promise-content">
+                <span class="section-tag">Unser Versprechen</span>
+                <p class="promise-text">
+                    <span class="highlight">IT soll sich nicht anfühlen wie ein Kampf.</span><br>
+                    Sie rufen an, wir lösen. Ohne Warteschleifen. Ohne Fachchinesisch. Ohne böse Überraschungen auf der Rechnung.
+                </p>
+                
+                <div class="promise-features">
+                    <div class="promise-feature">
+                        <div class="promise-feature-icon">🎯</div>
+                        <h4>Klar & direkt</h4>
+                        <p>Ein Ansprechpartner. Klare Worte. Keine Ausreden.</p>
+                    </div>
+                    <div class="promise-feature">
+                        <div class="promise-feature-icon">⚡</div>
+                        <h4>Schnell & zuverlässig</h4>
+                        <p>Reaktion in Minuten, nicht Tagen.</p>
+                    </div>
+                    <div class="promise-feature">
+                        <div class="promise-feature-icon">💰</div>
+                        <h4>Fair & transparent</h4>
+                        <p>Sie wissen immer, was Sie zahlen.</p>
+                    </div>
+                    <div class="promise-feature">
+                        <div class="promise-feature-icon">🇨🇭</div>
+                        <h4>100% Schweiz</h4>
+                        <p>Ihre Daten bleiben hier. Garantiert.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Wer wir sind</span>
+                    <h2 class="section-title">Menschen, die <span class="gradient-text">IT lieben</span> – und Probleme hassen</h2>
+                    <p class="about-text">
+                        Wir sind keine anonyme IT-Firma. Wir sind ein <strong>Team aus Nerds mit Herz</strong>, 
+                        das morgens aufsteht, um Unternehmen wie Ihres von IT-Frust zu befreien.
+                    </p>
+                    <p class="about-text">
+                        Gegründet in der Schweiz. Verwurzelt in der Schweiz. Wir kennen die Herausforderungen 
+                        von Schweizer KMU – weil wir selbst eines sind.
+                    </p>
+                    <div class="about-quote">
+                        <p>«Gute IT merkt man nicht. Man merkt nur, wenn sie fehlt.»</p>
+                    </div>
+                    <p class="about-text">
+                        Deshalb arbeiten wir im Hintergrund, damit Sie im Vordergrund glänzen können. 
+                        <strong>Ihr Erfolg ist unser Antrieb.</strong>
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="visual-bg"></div>
+                        <div class="visual-content">
+                            <div class="visual-icon">🪶</div>
+                            <h3>Federleicht arbeiten</h3>
+                            <p>Stellen Sie sich vor, IT wäre einfach kein Thema mehr. Kein Stress, keine Sorgen, keine Ausfälle. Genau das ist unser Ziel für Sie.</p>
+                        </div>
+                    </div>
+                    <div class="floating-badges">
+                        <div class="badge badge-1">Microsoft Partner</div>
+                        <div class="badge badge-2">ISO 27001</div>
+                        <div class="badge badge-3">🇨🇭 Swiss Made</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Warum FederliT?</span>
+                <h2 class="section-title">Weil wir anders <span class="gradient-text">ticken</span></h2>
+                <p class="section-subtitle">Es gibt viele IT-Firmen. Aber nur eine, die so arbeitet:</p>
+            </div>
+            
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-number">01</div>
+                    <h3>Sie reden mit Menschen, nicht mit Maschinen</h3>
+                    <p>Keine Telefon-Warteschleifen mit «Drücken Sie 1 für...». Bei uns nimmt ein Mensch ab. Einer, der Ihren Namen kennt.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">02</div>
+                    <h3>Wir reden Klartext</h3>
+                    <p>Kein IT-Kauderwelsch. Wir erklären so, dass es jeder versteht. Und wenn Sie Fragen haben: Fragen Sie. Immer.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">03</div>
+                    <h3>Fixpreise statt Überraschungen</h3>
+                    <p>Unsere Managed Services haben feste Monatspreise. Sie wissen genau, was kommt. Keine versteckten Kosten. Niemals.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">04</div>
+                    <h3>Wir denken mit</h3>
+                    <p>Wir warten nicht, bis etwas kaputt geht. Wir handeln, bevor Probleme entstehen. Proaktiv statt reaktiv.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">05</div>
+                    <h3>Ihre Daten bleiben in der Schweiz</h3>
+                    <p>Kein Datentransfer ins Ausland. Keine dubiosen Server irgendwo. Schweizer Qualität, Schweizer Sicherheit.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">06</div>
+                    <h3>Wir feiern Ihren Erfolg</h3>
+                    <p>Wenn Ihr Unternehmen wächst, wachsen wir mit. Ihre Ziele sind unsere Ziele. Das ist echte Partnerschaft.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Bereit, IT federleicht zu erleben?</h2>
+                <p>30 Minuten, die alles ändern können. Kostenlos, unverbindlich und garantiert ohne Verkaufsdruck.</p>
+                <a href="#booking" class="btn btn-primary btn-large">
+                    Jetzt Termin sichern
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-info">
+                    <span class="section-tag">Termin buchen</span>
+                    <h2 class="section-title">30 Minuten, die <span class="gradient-text">alles ändern</span></h2>
+                    <p class="booking-text">
+                        Kein Verkaufsgespräch. Kein Blabla. Sondern ein echtes Gespräch über Ihre IT-Herausforderungen – 
+                        und wie wir sie gemeinsam lösen können.
+                    </p>
+                    
+                    <div class="booking-benefits">
+                        <div class="booking-benefit">
+                            <span class="benefit-icon">✓</span>
+                            <span>Kostenlos & unverbindlich</span>
+                        </div>
+                        <div class="booking-benefit">
+                            <span class="benefit-icon">✓</span>
+                            <span>30 Minuten, mehr brauchen wir nicht</span>
+                        </div>
+                        <div class="booking-benefit">
+                            <span class="benefit-icon">✓</span>
+                            <span>Video-Call oder Telefon – Sie wählen</span>
+                        </div>
+                        <div class="booking-benefit">
+                            <span class="benefit-icon">✓</span>
+                            <span>Direkt mit einem Experten sprechen</span>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-note">
+                        <p>💡 <strong>Tipp:</strong> Bereiten Sie 2-3 konkrete Fragen vor – so holen Sie das Maximum aus unserem Gespräch.</p>
+                    </div>
+                </div>
+                
+                <div class="booking-calendar">
+                    <!-- Calendly inline widget -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/federlit/30min?hide_gdpr_banner=1&primary_color=1e5fbb" style="min-width:320px;height:700px;"></div>
+                    
+                    <!-- Fallback wenn Calendly nicht geladen -->
+                    <noscript>
+                        <div class="booking-fallback">
+                            <p>Für die Terminbuchung benötigen Sie JavaScript.</p>
+                            <p>Alternativ: <a href="mailto:hallo@federlit.ch">hallo@federlit.ch</a> oder <a href="tel:+41441234567">+41 44 123 45 67</a></p>
+                        </div>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Kontakt</span>
+                    <h2 class="section-title">Lassen Sie uns <span class="gradient-text">reden</span></h2>
+                    <p class="contact-text">
+                        Kein Formular-Spam, versprochen. Wir melden uns innerhalb von 24 Stunden – 
+                        meistens schneller. Und wenn Sie lieber gleich telefonieren: Noch besser.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Besuchen Sie uns</h4>
+                                <p>Federlit GmbH<br>Musterstrasse 123<br>8000 Zürich</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Rufen Sie an</h4>
+                                <p><a href="tel:+41441234567">+41 44 123 45 67</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Schreiben Sie uns</h4>
+                                <p><a href="mailto:hallo@federlit.ch">hallo@federlit.ch</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3>Kurz und schmerzlos</h3>
+                        <p>30 Sekunden, dann sind wir dran.</p>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ihr Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Max Muster">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Firma</label>
+                                <input type="text" id="company" name="company" placeholder="Muster AG">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="max@muster.ch">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+41 44 123 45 67">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Was beschäftigt Sie?</label>
+                            <select id="service" name="service">
+                                <option value="">Bitte wählen...</option>
+                                <option value="cloud">Unsere Cloud ist ein Chaos</option>
+                                <option value="security">Wir sorgen uns um Sicherheit</option>
+                                <option value="managed">Wir brauchen IT-Rundum-Sorglos</option>
+                                <option value="workplace">Homeoffice funktioniert nicht richtig</option>
+                                <option value="consulting">Wir brauchen einen Plan</option>
+                                <option value="other">Etwas ganz anderes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Erzählen Sie uns mehr</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Was ist Ihre grösste IT-Herausforderung gerade?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Absenden – wir melden uns!</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <svg class="logo-svg" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="8" width="28" height="5" fill="currentColor"/>
+                            <rect x="0" y="18" width="18" height="5" fill="currentColor"/>
+                            <rect x="0" y="28" width="28" height="5" fill="currentColor"/>
+                            <circle cx="45" cy="12" r="5" fill="#3B7DD8"/>
+                            <rect x="42" y="20" width="6" height="13" fill="currentColor"/>
+                            <rect x="60" y="8" width="6" height="25" fill="#3B7DD8"/>
+                            <rect x="60" y="8" width="20" height="5" fill="#3B7DD8"/>
+                        </svg>
+                        <span class="logo-text">Feder<span class="logo-accent">liT</span></span>
+                    </a>
+                    <p>IT-Dienstleistungen, die sich nicht wie Arbeit anfühlen. Für Unternehmen, die Besseres zu tun haben, als sich mit Technik herumzuärgern.</p>
+                    <p class="footer-tagline">Federleicht in die digitale Zukunft.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Das machen wir</h4>
+                    <ul>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">Cyber Security</a></li>
+                        <li><a href="#services">Managed Services</a></li>
+                        <li><a href="#services">Modern Workplace</a></li>
+                        <li><a href="#services">IT Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Das sind wir</h4>
+                    <ul>
+                        <li><a href="#about">Über FederliT</a></li>
+                        <li><a href="#why-us">Warum wir</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Federlit GmbH. Mit 🤍 gemacht in der Schweiz.</p>
+                <p>Keine Cookies, die Sie nerven. Versprochen.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Calendly Widget Script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
